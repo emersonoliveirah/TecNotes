@@ -1,0 +1,136 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    color: #000;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: #fff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.headerLeft, .headerRight {
+    display: flex;
+    align-items: center;
+}
+
+.headerIcon {
+    margin-right: 8px;
+}
+
+.headerInput {
+    border: none;
+    outline: none;
+    background-color: #f5f5f5;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.content {
+    padding: 16px 24px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.section {
+    margin-bottom: 24px;
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.sectionIcon {
+    margin-right: 8px;
+}
+
+.sectionTitle {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.notesContainer, .remindersContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+}
+
+.note, .reminder {
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.noteTitle, .reminderTitle, .noteContent {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px 24px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footerButton {
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+
+.footerIcon {
+    margin-right: 8px;
+}
+
+.footerButtonText {
+    font-size: 16px;
+}
+
+.note {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.noteContentInput, .noteTitleInput, .reminderTitleInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+}
+
+.saveButton {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
